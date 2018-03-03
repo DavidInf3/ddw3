@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>DDW III</title>
+   <style>
+         #canvas{
+             background-color: #ccc;
+         }
+   </style>
+ </head>
+ <body>
+ 
+     <canvas id="canvas" width="300" height="300">
+         Seu navegador não suporta esse recurso
+     </canvas>
+ 
+     <script type="text/javascript">
+         var canvas = document.getElementById("canvas");
+         var contexto = canvas.getContext('2d');
+ 
+         contexto.beginPath();
+         contexto.moveTo(20,80);
+         contexto.lineTo(20,200);
+         contexto.lineTo(100,150);
+         contexto.lineTo(19,80);
+         contexto.strokeStyle = "green";
+         contexto.lineWidth = 4;
+         contexto.stroke();
+         contexto.fillStyle = "#000";
+         contexto.fill();
+ 
+     </script>
+ </body>
+ </html>
